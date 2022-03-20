@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    text-decoration: underline;
+    padding: 40px;
+    font-size: 26px;
+    background-color: lightblue;
+    color: black;
+}
+h4 {
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav {
+    text-align: right;
+    background-color: black;
+}
+a{
+    margin-left: 10px;
+}
+a:hover {
+    background-color: aqua;
+    color: black;
+}
+table{
+    margin-left: 20%;
+    color: white;
+}
+.table{
+    height: 474px;
+    background-color: black;
+    padding-top: 40px;
+}
+@media screen and (max-width:600px) 
+{
+    
+    
+}

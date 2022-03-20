@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            padding: 40px;
+            background-color: black;
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+            font-size: large;
+            padding: 5px;
+        }
+
+        .c1 {
+
+            background: url("classroom.jpg") ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 540px;
+
+        }
+
+        .form {
+            padding: 50px;
+            background-color: rgba(0,0,0,0.8);
+            margin-left: 30%;
+            margin-right: 30%;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+
+        label {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 3px;
+            color: white;
+            margin: 3px;
+        }
+
+        input {
+            padding: 3px;
+            margin: 3px;
+        }
+
+        @media screen and (max-width:800px) {
+            .form {
+                margin-left: 15%;
+                margin-right: 15%;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .form {
+                margin-left: 10%;
+                margin-right: 10%;
+                text-align: center;
+            }
+        }
+
+        h4 {
+            text-align: center;
+            color: yellow;
+            background-color: black;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        h1{
+            text-align: center;
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>STUDENT AREA</h1>
+    </header>
+    <nav>
+        <a href="index.html">LOGOUT</a>
+    </nav>
+    <div class="c1">
+        <h2>Enter the Details</h2>
+        <div class="form">
+            <form action="sform.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required><br>
+                <label for="uniroll">University Roll no.</label><br>
+                <input type="number" name="uniroll" id="uniroll" placeholder="Enter university roll no." required><br>
+                <label for="clrn">Class Roll no.</label><br>
+                <input type="number" id="clrn" name="clrn" placeholder="Enter class roll no." required><br>
+                <label for="date">Date</label><br>
+                <input type="date" id="date" name="date" placeholder="enter date" required><br>
+                <label for="time">Time</label><br>
+                <input type="number" name="time" id="time" placeholder="Enter class time"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h4>Made by Naoman Ali</h4>
+    </footer>
+</body>
+
+</html>
